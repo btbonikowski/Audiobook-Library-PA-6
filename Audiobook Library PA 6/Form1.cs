@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Audiobook_Library_PA_6
-{
+{   // Main form that requires the user to enter their CWID into the form to pull up a list of books
     public partial class frmCWID : Form
     {
         public frmCWID()
@@ -19,19 +19,19 @@ namespace Audiobook_Library_PA_6
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); // Closes the program, if the user wishes to
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMain myForm = new frmMain(txtCWID.Text);
-            if (myForm.ShowDialog() == DialogResult.OK)
+            this.Hide(); // Hides this form
+            frmMain myForm = new frmMain(txtCWID.Text); // Transfers the CWID over to the new main form
+            if (myForm.ShowDialog() == DialogResult.OK) // If it works, continue
             {
 
             }
 
-            else
+            else // Else, exit
             {
                 this.Close();
             }

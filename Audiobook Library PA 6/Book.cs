@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Audiobook_Library_PA_6
 {
-    class Book
+    class Book // This program stores the data for the book
     {
-
+        // Getters and setters
         public String cwid { get; set; }
         public String isbn { get; set; }
         public String title { get; set; }

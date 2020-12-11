@@ -9,14 +9,14 @@ using System.Net.Http;
 
 namespace Audiobook_Library_PA_6
 {
-    class BookFile
+    class BookFile // Taken from Jeff's database
     {
         public static List<Book> GetAllBooks(string cwid)
         {
 
 
             //URL
-            string url = @"http://lucas-swami-api.herokuapp.com/books/" + cwid;
+            string url = @"http://lucas-swami-api.herokuapp.com/books/" + cwid; // Connects to the database to ensure the cwid is correct
 
             //Route
             using (var httpClient = new HttpClient())
