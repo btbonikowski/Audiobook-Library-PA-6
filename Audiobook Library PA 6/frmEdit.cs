@@ -56,6 +56,7 @@ namespace Audiobook_Library_PA_6
             myBook.isbn = txtIsbnData.Text;
             myBook.cover = txtCoverData.Text;
             myBook.cwid = cwid;
+            pbCover.Load(myBook.cover);
 
             BookFile.SaveBook(myBook, cwid, mode);
 
